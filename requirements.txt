@@ -1,2 +1,7 @@
 python-dotenv
 google-cloud-bigquery
+pandas
+sqlalchemy
+mysql-connector-python
+pytest
+
