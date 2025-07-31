@@ -6,6 +6,35 @@ __pycache__/
 # C extensions
 *.so
 
+credentials/
+*.json
+
+# Ignore Python cache and bytecode
+__pycache__/
+*.pyc
+
+# Environment variables
+.env
+
+# Service account and auth credentials
+*.json
+credentials/
+
+# Raw data files
+data/
+*.csv
+
+# Jupyter notebooks checkpoints (if using notebooks)
+.ipynb_checkpoints/
+
+# VSCode or other editor settings
+.vscode/
+.idea/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
 # Distribution / packaging
 .Python
 build/
