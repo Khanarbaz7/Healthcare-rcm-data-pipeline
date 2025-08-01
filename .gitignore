@@ -22,7 +22,7 @@ credentials/
 
 # Raw data files
 data/
-*.csv
+
 
 # Jupyter notebooks checkpoints (if using notebooks)
 .ipynb_checkpoints/
