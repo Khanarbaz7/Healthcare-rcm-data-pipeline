@@ -1,0 +1,56 @@
+ProviderSK,ProviderID,FirstName,LastName,Specialization,DeptID,NPI,HospitalID
+0,H1-PROV0001,Brandon,Harper,Oncology,DEPT018,3086631719,HospitalA
+1,H1-PROV0002,Luke,Clark,Emergency Medicine,DEPT006,1265568618,HospitalA
+2,H1-PROV0003,Brandon,Austin,Pediatrics,DEPT014,3152052791,HospitalA
+3,H1-PROV0004,Anthony,Jones,Radiology,DEPT011,8195895822,HospitalA
+4,H1-PROV0005,Courtney,Flores,Anesthesiology,DEPT009,4159583915,HospitalA
+5,H1-PROV0006,Ricky,Johnson,Neurology,DEPT017,7386802836,HospitalA
+6,H1-PROV0007,John,Carroll,Neurology,DEPT014,9500252998,HospitalA
+7,H1-PROV0008,William,Stout,Emergency Medicine,DEPT005,3263108127,HospitalA
+8,H1-PROV0009,Kelly,Cardenas,Neurology,DEPT005,971099357,HospitalA
+9,H1-PROV0010,Dawn,Valdez,Psychiatry,DEPT008,8973799839,HospitalA
+10,H1-PROV0011,Jennifer,Mcdonald,Emergency Medicine,DEPT002,3939322372,HospitalA
+11,H1-PROV0012,Jennifer,Booth,Dermatology,DEPT004,3794188322,HospitalA
+12,H1-PROV0013,Andrew,Reed,Pediatrics,DEPT006,5744228048,HospitalA
+13,H1-PROV0014,Anthony,Edwards,Orthopedics,DEPT020,9041033020,HospitalA
+14,H1-PROV0015,Harold,Avila,General Surgery,DEPT002,7383729324,HospitalA
+15,H1-PROV0016,Stephanie,Bridges,Psychiatry,DEPT020,7216378001,HospitalA
+16,H1-PROV0017,Frank,Jordan,Neurology,DEPT005,6851568158,HospitalA
+17,H1-PROV0018,Adrian,Butler,Emergency Medicine,DEPT010,5971052640,HospitalA
+18,H1-PROV0019,Adrian,Bates,Emergency Medicine,DEPT010,4170579628,HospitalA
+19,H1-PROV0020,Steven,Norris,Psychiatry,DEPT007,7463053156,HospitalA
+20,H1-PROV0021,Elizabeth,Palmer,Pediatrics,DEPT016,4117507956,HospitalA
+21,H1-PROV0022,Danielle,Morris,Oncology,DEPT014,8416170674,HospitalA
+22,H1-PROV0023,Amanda,Johnson,Neurology,DEPT018,852786459,HospitalA
+23,H1-PROV0024,Michael,Rios,Dermatology,DEPT005,1080067352,HospitalA
+24,H1-PROV0025,Lisa,Schmitt,Radiology,DEPT003,8707948901,HospitalA
+25,H2-PROV0001,Wanda,Ramos,Pediatrics,DEPT003,9903342850,HospitalB
+26,H2-PROV0002,Steven,Roach,Radiology,DEPT010,3653586329,HospitalB
+27,H2-PROV0003,Amber,Martin,Emergency Medicine,DEPT002,6917277775,HospitalB
+28,H2-PROV0004,Ryan,Thompson,Oncology,DEPT007,5911746015,HospitalB
+29,H2-PROV0005,Michael,Gould,Neurology,DEPT018,5155973871,HospitalB
+30,H2-PROV0006,Austin,Fisher,Radiology,DEPT020,6938681303,HospitalB
+31,H2-PROV0007,Jack,Orozco,Cardiology,DEPT002,5919610313,HospitalB
+32,H2-PROV0008,Ryan,Nielsen,Radiology,DEPT006,779165968,HospitalB
+33,H2-PROV0009,Becky,Scott,Emergency Medicine,DEPT001,4880463675,HospitalB
+34,H2-PROV0010,Francisco,Taylor,Anesthesiology,DEPT017,9778155154,HospitalB
+35,H2-PROV0011,Isaac,Johnson,Anesthesiology,DEPT010,1865482724,HospitalB
+36,H2-PROV0012,Tara,Lopez,Anesthesiology,DEPT010,7337412625,HospitalB
+37,H2-PROV0013,Mikayla,Murphy,Pediatrics,DEPT011,2071097461,HospitalB
+38,H2-PROV0014,Mark,Sanchez,General Surgery,DEPT016,332121350,HospitalB
+39,H2-PROV0015,Jacob,Davis,Neurology,DEPT009,635687890,HospitalB
+40,H2-PROV0016,Sara,Hutchinson,Emergency Medicine,DEPT014,2873366247,HospitalB
+41,H2-PROV0017,Jason,Novak,Dermatology,DEPT002,7333373057,HospitalB
+42,H2-PROV0018,Heather,Beasley,Anesthesiology,DEPT008,5355900325,HospitalB
+43,H2-PROV0019,Wendy,Fisher,Anesthesiology,DEPT004,89308414,HospitalB
+44,H2-PROV0020,Veronica,Myers,Pediatrics,DEPT005,8319154772,HospitalB
+45,H2-PROV0021,Janet,Moody,Psychiatry,DEPT003,5424799523,HospitalB
+46,H2-PROV0022,Jeffrey,Cummings,Dermatology,DEPT003,5004296124,HospitalB
+47,H2-PROV0023,Angel,Stewart,Psychiatry,DEPT013,6068089514,HospitalB
+48,H2-PROV0024,Jorge,Richmond,General Surgery,DEPT013,1928310163,HospitalB
+49,H2-PROV0025,Joseph,Wilson,Dermatology,DEPT006,278988197,HospitalB
+50,H2-PROV0026,Patricia,Allen,Dermatology,DEPT020,894720951,HospitalB
+51,H2-PROV0027,Casey,Hughes,Orthopedics,DEPT012,5340793904,HospitalB
+52,H2-PROV0028,Samantha,Hale,Pediatrics,DEPT005,2444270642,HospitalB
+53,H2-PROV0029,Michael,Morales,Radiology,DEPT017,9476115529,HospitalB
+54,H2-PROV0030,Matthew,Paul,Oncology,DEPT020,8300274432,HospitalB
