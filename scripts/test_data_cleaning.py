@@ -22,3 +22,11 @@ print(f" Enriched Patients with Age: {enriched_patients[['UnifiedPatientID', 'Ag
 enriched_claims = cleaner.enrich_claims(cleaned_claims)
 print(f" Enriched Claims with Coverage %, Payment Status, Time Dimensions:")
 print(enriched_claims[["ClaimID", "CoveragePercent", "PaymentStatus", "ClaimYear", "ClaimMonth"]].head(3))
+
+# Enrichment
+enriched_patients = cleaner.enrich_patients(cleaned_patients)
+enriched_claims = cleaner.enrich_claims(cleaned_claims)
+
+print(" Final Cleaned Patient Columns:", enriched_patients.columns.tolist())
+print(" Final Cleaned Claim Columns:", enriched_claims.columns.tolist())
+

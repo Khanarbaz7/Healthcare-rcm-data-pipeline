@@ -40,13 +40,34 @@ class DataCleaner:
         df = df.copy()
         today = pd.to_datetime("today")
         df["Age"] = df["DOB"].apply(lambda dob: today.year - dob.year if pd.notnull(dob) else None)
-        return df
+        df["PatientSK"] = df["UnifiedPatientID"].astype("category").cat.codes
+        return df[["UnifiedPatientID", "PatientSK", "FirstName", "LastName", "Gender", "DOB", "Age", "HospitalID", "Address"]]
+
 
     def enrich_claims(self, df):
         df = df.copy()
 
+        # Only enrich ProcedureCode if it exists
+        if "ProcedureCode" in df.columns:
+            procedure_map = {
+                1001: "MRI Scan",
+                1002: "X-Ray",
+                1003: "Blood Test",
+                1004: "Ultrasound",
+                1005: "CT Scan"
+            }
+            df["ProcedureDescription"] = df["ProcedureCode"].map(procedure_map)
+        else:
+            # Add empty columns if missing
+            df["ProcedureCode"] = None
+            df["ProcedureDescription"] = None
+
         # Compute coverage percentage
         df["CoveragePercent"] = (df["PaidAmount"] / df["ClaimAmount"]) * 100
+
+        # Surrogate key
+        df["ClaimSK"] = df["ClaimID"].astype("category").cat.codes
+        df["ClaimDateKey"] = df["ClaimDate"].dt.strftime("%Y%m%d")
 
         # Categorize payment status
         def categorize_status(row):
@@ -61,10 +82,15 @@ class DataCleaner:
 
         df["PaymentStatus"] = df.apply(categorize_status, axis=1)
 
-        # Add time dimensions from ClaimDate
+        # Add time dimensions
         df["ClaimYear"] = df["ClaimDate"].dt.year
         df["ClaimMonth"] = df["ClaimDate"].dt.month
         df["ClaimQuarter"] = df["ClaimDate"].dt.quarter
         df["ClaimDayOfWeek"] = df["ClaimDate"].dt.day_name()
 
-        return df
+        return df[[  
+            "ClaimSK", "ClaimID", "UnifiedPatientID", "ClaimAmount", "PaidAmount", "CoveragePercent",
+            "PaymentStatus", "ClaimDate", "ClaimDateKey", "ClaimYear", "ClaimMonth", 
+            "ClaimQuarter", "ClaimDayOfWeek", "ProcedureCode", "ProcedureDescription", "HospitalID"
+        ]]
+
